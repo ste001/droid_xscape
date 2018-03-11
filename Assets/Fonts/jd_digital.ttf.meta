@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 04907080b2e6c2d4a9096bb0b7247efe
+timeCreated: 1520810651
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: JD Digital
+  fontNames:
+  - JD Digital
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
