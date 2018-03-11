@@ -29,6 +29,16 @@ public class PlayerController : MonoBehaviour {
         ProcessRotation();
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        print("Collided with something");
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        print("Triggered something");
+    }
+
     private void ProcessTransform()
     {
         xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
