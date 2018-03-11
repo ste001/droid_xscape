@@ -151,6 +151,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 198643758337914016, guid: d07e80d8693cfc94a805408f4be45b27,
+        type: 2}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198643758337914016, guid: d07e80d8693cfc94a805408f4be45b27,
+        type: 2}
+      propertyPath: randomSeed
+      value: -730483519
+      objectReference: {fileID: 0}
+    - target: {fileID: 198643758337914016, guid: d07e80d8693cfc94a805408f4be45b27,
+        type: 2}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198643758337914016, guid: d07e80d8693cfc94a805408f4be45b27,
+        type: 2}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d07e80d8693cfc94a805408f4be45b27, type: 2}
   m_IsPrefabParent: 0
