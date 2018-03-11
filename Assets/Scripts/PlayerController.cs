@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour {
 
     [Header("Control throw based based")]
     [SerializeField] float controlPitchFactor = -10f;  // Also used for roll
+
     float xThrow, yThrow;
     bool isControlEnabled = true;
 
