@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4309358170637042}
   - component: {fileID: 33712109591519330}
   - component: {fileID: 23716656641392600}
-  - component: {fileID: 65093264780680840}
   - component: {fileID: 114466242673774948}
   m_Layer: 0
   m_Name: Ship_04
@@ -37,8 +36,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1431581372656366}
   m_LocalRotation: {x: -0.12278779, y: -0.6963643, z: -0.6963643, w: 0.12278779}
-  m_LocalPosition: {x: -57.5, y: 74.8, z: 487.3}
-  m_LocalScale: {x: 30, y: 30, z: 30}
+  m_LocalPosition: {x: -58.1, y: 47, z: 519.4}
+  m_LocalScale: {x: 30.000027, y: 30.000013, z: 30.000015}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -84,18 +83,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1431581372656366}
   m_Mesh: {fileID: 4300004, guid: ec2ed6fafcc53c64ba923b9ef7d5749f, type: 3}
---- !u!65 &65093264780680840
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1431581372656366}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.38488367, y: 0.51466966, z: 0.17804633}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114466242673774948
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -107,3 +94,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ab020ff9bd4954b862bdd719df6b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathFX: {fileID: 1467964713104288, guid: 309b60085fd61914a9ca88d374eb791e, type: 2}
+  parent: {fileID: 0}
