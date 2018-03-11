@@ -4,18 +4,22 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour {
-
+    
+    [Header("General")]
     [Tooltip("In ms^-1")][SerializeField] float xSpeed = 30f;
     [Tooltip("In m")] [SerializeField]float xRange = 18f;
     [Tooltip("In ms^-1")] [SerializeField] float ySpeed = 20f;
     [Tooltip("In m")] [SerializeField] float yMin = -6f;
     [Tooltip("In m")] [SerializeField] float yMax = 6f;
 
-    
+    [Header("Screen position based")]
     [SerializeField] float positionPitchFactor = -2f;
-    [SerializeField] float controlPitchFactor = -10f;  // Also used for roll
     [SerializeField] float positionYawFactor = 2f;
+
+    [Header("Control throw based based")]
+    [SerializeField] float controlPitchFactor = -10f;  // Also used for roll
     float xThrow, yThrow;
+    bool isControlEnabled = true;
 
     // Use this for initialization
     void Start () {
@@ -25,18 +29,16 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        ProcessTransform();
-        ProcessRotation();
+        if (isControlEnabled)
+        {
+            ProcessTransform();
+            ProcessRotation();
+        }
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnPlayerDeath()    // Called by string reference
     {
-        print("Collided with something");
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        print("Triggered something");
+        isControlEnabled = false;
     }
 
     private void ProcessTransform()
