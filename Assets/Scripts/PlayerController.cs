@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour {
         {
             ProcessTransform();
             ProcessRotation();
-            ProcessRotationFiring();
+            ProcessFiring();
         }
     }
 
@@ -73,15 +73,16 @@ public class PlayerController : MonoBehaviour {
     }
 
 
-    private void ProcessRotationFiring()
+    private void ProcessFiring()
     {
+        var particles = Gun.GetComponent<ParticleSystem>().emission;
         if (CrossPlatformInputManager.GetButton("Fire"))
         {
-            Gun.SetActive(true);
+            particles.enabled = true;
         }
         else
         {
-            Gun.SetActive(false);
+            particles.enabled = false;
         }
     }
 }
